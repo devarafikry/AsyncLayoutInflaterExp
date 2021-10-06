@@ -37,12 +37,12 @@ class HomeFragment : Fragment() {
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
         PerfTrack.startTrack("Inflate fragment")
-//        val final_view: View? = LayoutInflater.from(context).inflate(R.layout.fragment_loading, container, false)
-//        asyncLayoutInflater.inflate(R.layout.fragment_home_simple, container) {
-//            view, _, _ ->
-//            (final_view as? ViewGroup)?.addView(view) // add view to already inflated view
-//        }
-        val final_view: View? = LayoutInflater.from(context).inflate(R.layout.fragment_home_simple, container, false)
+        val final_view: View? = LayoutInflater.from(context).inflate(R.layout.fragment_loading, container, false)
+        asyncLayoutInflater.inflate(R.layout.fragment_home_simple, container) {
+            view, _, _ ->
+            (final_view as? ViewGroup)?.addView(view) // add view to already inflated view
+        }
+//        val final_view: View? = LayoutInflater.from(context).inflate(R.layout.fragment_home_simple, container, false)
         someHeavyProcess()
         final_view?.viewTreeObserver?.addOnGlobalLayoutListener(object: ViewTreeObserver.OnGlobalLayoutListener {
             override fun onGlobalLayout() {
