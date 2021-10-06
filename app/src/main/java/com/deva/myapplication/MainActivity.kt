@@ -26,8 +26,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openFragment(fragment: Fragment) {
-        PerfTrack.startTrack("Inflate fragment")
-
         handler.post(Runnable {
             val backStateName = fragment.javaClass.name
             val manager = supportFragmentManager
