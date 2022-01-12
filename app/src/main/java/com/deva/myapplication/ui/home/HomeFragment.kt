@@ -36,22 +36,42 @@ class HomeFragment : Fragment() {
     ): View? {
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
+
         PerfTrack.startTrack("Inflate fragment")
-        val final_view: View? = LayoutInflater.from(context).inflate(R.layout.fragment_loading, container, false)
-        asyncLayoutInflater.inflate(R.layout.fragment_home_simple, container) {
-            view, _, _ ->
-            (final_view as? ViewGroup)?.addView(view) // add view to already inflated view
-        }
-//        val final_view: View? = LayoutInflater.from(context).inflate(R.layout.fragment_home_simple, container, false)
-        someHeavyProcess()
+
+        /**
+         * Use async layout inflater to inflate home_fragment
+         */
+//        val final_view: View? = LayoutInflater.from(context).inflate(R.layout.fragment_loading, container, false)
+//        asyncLayoutInflater.inflate(R.layout.fragment_home, container) {
+//            view, _, _ ->
+//            (final_view as? ViewGroup)?.addView(view) // add view to already inflated view
+//        }
+
+        /**
+         * Use normal layout inflater to inflate home_fragment
+         */
+        val final_view: View? = LayoutInflater.from(context).inflate(R.layout.fragment_home, container, false)
+
+        /**
+         * Detect when view is showing
+         */
         final_view?.viewTreeObserver?.addOnGlobalLayoutListener(object: ViewTreeObserver.OnGlobalLayoutListener {
             override fun onGlobalLayout() {
                 if (final_view.findViewById<ScrollView>(R.id.content_scroll_view)?.isShown == true) {
-                    PerfTrack.stopTrack()
+                    final_view.findViewById<View>(R.id.content_loading)?.visibility = View.GONE
                     final_view.viewTreeObserver?.removeOnGlobalLayoutListener(this)
+                    PerfTrack.stopTrack()
                 }
             }
         })
+
+        /**
+         * Another process ~500ms
+         */
+        someHeavyProcess()
+
+
         return final_view
     }
 

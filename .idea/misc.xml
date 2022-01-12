@@ -8,8 +8,14 @@
         <entry key="app/src/main/res/layout/fragment_home_middle.xml" value="0.1969775924960917" />
         <entry key="app/src/main/res/layout/fragment_home_simple.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_loading.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.16485507246376813" />
+        <entry key="app/src/main/res/layout/fragment_view_stub.xml" value="0.5116279069767442" />
+        <entry key="app/src/main/res/layout/fragment_view_stub_normal.xml" value="0.5" />
         <entry key="app/src/main/res/layout/heavy_item.xml" value="0.20052083333333334" />
         <entry key="app/src/main/res/layout/simple_item.xml" value="0.196875" />
+        <entry key="app/src/main/res/layout/view_stub_image_layout.xml" value="0.16485507246376813" />
+        <entry key="app/src/main/res/layout/view_stub_image_layout_1.xml" value="0.16485507246376813" />
+        <entry key="app/src/main/res/layout/view_stub_image_layout_2.xml" value="0.16485507246376813" />
       </map>
     </option>
   </component>

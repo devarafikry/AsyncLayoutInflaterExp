@@ -14,7 +14,7 @@ object PerfTrack {
 
     fun stopTrack() {
         var diff = System.currentTimeMillis() - millis
-        Log.d("PerformanceMonitoring", name+": "+diff)
+        Log.d("PerformanceMonitoring", name+": "+diff+"ms")
 
         this.millis = 0L
         this.name = ""

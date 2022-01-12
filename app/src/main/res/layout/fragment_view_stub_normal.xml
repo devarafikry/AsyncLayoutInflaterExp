@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/content_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:id="@+id/etValue"
+        android:text="0"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnActViewStub"
+        android:text="Inflate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="200dp"
+        android:scaleType="centerCrop"
+        android:layout_height="50dp"
+        android:background="@drawable/heavy"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/img2"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:scaleType="centerCrop"
+        android:layout_height="50dp"
+        android:background="@drawable/heavy2"
+        />
+    <ImageView
+        android:id="@+id/img3"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:scaleType="centerCrop"
+        android:layout_height="50dp"
+        android:background="@drawable/heavy3"
+        />
+</LinearLayout>

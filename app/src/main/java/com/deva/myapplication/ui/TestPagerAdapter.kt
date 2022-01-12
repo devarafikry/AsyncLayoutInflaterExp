@@ -4,7 +4,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.deva.myapplication.ui.home.HomeFragment
-import com.deva.myapplication.ui.notifications.NotificationsFragment
 
 class TestPagerAdapter(fragmentManager: FragmentManager?) : FragmentPagerAdapter(fragmentManager!!) {
     // Returns total number of pages
@@ -16,7 +15,6 @@ class TestPagerAdapter(fragmentManager: FragmentManager?) : FragmentPagerAdapter
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> HomeFragment.Companion.newInstance()
-            1 -> NotificationsFragment.newInstance()
             else -> HomeFragment.Companion.newInstance()
         }
     }

@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.deva.myapplication.ui.PerfTrack
 import com.deva.myapplication.ui.home.HomeFragment
+import com.deva.myapplication.ui.home.ViewStubFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         selectFragment(HomeFragment())
+//        selectFragment(ViewStubFragment())
     }
 
     private fun selectFragment(fragment: Fragment) {

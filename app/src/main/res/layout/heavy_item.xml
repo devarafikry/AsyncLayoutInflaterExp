@@ -10,8 +10,8 @@
         android:layout_width="100dp"
         android:scaleType="centerCrop"
         android:layout_height="200dp"
-        android:src="@drawable/heavy"
-        android:background="@drawable/heavy"
+        android:src="@drawable/heavy3"
+        android:background="@drawable/heavy3"
         />
     <ImageView
         android:id="@+id/img2"
@@ -21,8 +21,8 @@
         android:scaleType="centerCrop"
         android:layout_marginStart="5dp"
         android:layout_height="50dp"
-        android:src="@drawable/heavy"
-        android:background="@drawable/heavy"
+        android:src="@drawable/heavy3"
+        android:background="@drawable/heavy3"
         />
     <ImageView
         android:id="@+id/img3"
@@ -33,8 +33,8 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_height="145dp"
-        android:src="@drawable/heavy"
-        android:background="@drawable/heavy"
+        android:src="@drawable/heavy3"
+        android:background="@drawable/heavy3"
         />
     <ImageView
         android:id="@+id/img5"
@@ -44,8 +44,8 @@
         android:scaleType="centerCrop"
         android:layout_marginStart="5dp"
         android:layout_height="50dp"
-        android:src="@drawable/heavy"
-        android:background="@drawable/heavy"
+        android:src="@drawable/heavy3"
+        android:background="@drawable/heavy3"
         />
     <ImageView
         android:id="@+id/img4"
@@ -56,8 +56,8 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_height="145dp"
-        android:src="@drawable/heavy"
-        android:background="@drawable/heavy"
+        android:src="@drawable/heavy3"
+        android:background="@drawable/heavy3"
         />
     <ImageView
         android:id="@+id/img6"
@@ -67,7 +67,7 @@
         android:scaleType="centerCrop"
         android:layout_marginStart="5dp"
         android:layout_height="200dp"
-        android:src="@drawable/heavy"
-        android:background="@drawable/heavy"
+        android:src="@drawable/heavy3"
+        android:background="@drawable/heavy3"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
